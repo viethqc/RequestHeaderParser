@@ -3,7 +3,7 @@ var app = express();
 var url = require('url');
 
 
-app.set('port', 8888);
+app.set('port', process.env.PORT || 5000);
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
