@@ -1,0 +1,8 @@
+{
+  "name": "Request Header Parser Microservice",
+  "description": "",
+  "repository": "https://github.com/viethqc/RequestHeaderParser",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
