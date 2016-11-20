@@ -20,7 +20,7 @@ app.get("/*", function(request, response){
 	var szAccepLanguage = request.headers["accept-language"];
 	var szUserAgent = request.headers["user-agent"];
 
-	szIP = request.connection.remoteAddress;
+	szIP = request.header('x-forwarded-for') || request.connection.remoteAddress;
 	szLanguage = szAccepLanguage.split(";")[0];
 
 	iMozillaIndex = szUserAgent.indexOf("Mozilla");
